@@ -1,8 +1,16 @@
-Here is a kafka basic example to understand
+Here is a Kafka basic example to understand
 
-first run the zookeeper: (CMD) your kafka folder ->  zookeeper-server-start.bat ..\..\config\zookeeper.properties
-then run the kafka: (CMD) your kafka folder ->  kafka-server-start.bat ..\..\config\server.properties
-and create topics: (CMD) your kafka folder -> kafka-topics.bat --create --topic x-topic --partitions 2 --replication-factor 1 --bootstrap-server localhost:9092, 
+
+Open the command prompt and navigate to the directory where Kafka is located.
+
+First run the zookeeper
+zookeeper-server-start.bat ..\..\config\zookeeper.properties
+
+Then run the kafka
+kafka-server-start.bat ..\..\config\server.properties
+
+and create topics: 
+kafka-topics.bat --create --topic x-topic --partitions 2 --replication-factor 1 --bootstrap-server localhost:9092, 
 kafka-topics.bat --create --topic y-topic --partitions 2 --replication-factor 1 --bootstrap-server localhost:9092
 
-finally run the spring boot apps.
+Finally run the spring boot apps.
